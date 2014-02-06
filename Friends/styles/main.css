@@ -12,6 +12,70 @@
   clear: both;
 }
 
+header {
+    background-image: url(images/diagonal-grid.png);
+    text-align:center;
+    font-size:25px;
+	width: 100%;
+}
+
+#logo{
+    margin-top: 10%;
+}
+
+#title{
+    /*color:#61B737; the green code*/
+    color:#fff;
+    text-align:center;
+    font-weight: bold;
+    font-size:15px;
+    margin-top:5%;
+    font-family: Arial,Helvetica,sans-serif;
+}
+   
+#title h1{
+    font-size:40px;
+    font-weight:bold;
+    overflow:visible;
+    text-align:center;
+}
+
+#title h1{
+    font-size:40px;
+    font-weight:bold;
+    overflow:visible;
+    text-align:center;
+}
+
+#logindiv {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;   
+    color: #444;   
+    -webkit-font-smoothing: antialiased;    
+    width: 440px;
+    height: 380px;
+    margin: 0 auto;
+    border-radius: 3px;
+    padding:3px;
+    text-align:center;
+    
+}
+
+#lower {
+    height: 100px;
+    width: 95%;
+    margin-top: 10px;
+    margin:auto;
+    border:1px ridge #414548;
+    text-align:center;
+    font-size:23px;
+    border-radius: 10px;
+    color:#fff;
+    background-color:#414548;
+    box-shadow: 0 1px 2px #53585C;
+    text-transform:none;
+    font-family: Arial,Helvetica,sans-serif;
+ }
+
 .km-flat .km-loader,
 .km-flat .km-rowinsert,
 .km-flat .km-state-active,
@@ -41,7 +105,7 @@
     border: 0 none;
     color: #fff;
     font-family: "Open Sans", sans-serif;
-    background-color: #2d3e50;
+    background-color: #35353D;
 }
 
 #friendsApp .center-block {
@@ -114,6 +178,7 @@
     border-radius: 0 0 2px 2px;
 }
 
+/*this is the fileds that determine the size of the username and and password*/
 #friendsApp.km-flat .km-list input[type="text"]:not(.k-input),
 #friendsApp.km-flat .km-list input[type="password"],
 #friendsApp.km-flat .km-list input[type="email"],
@@ -122,12 +187,23 @@
 #friendsApp.km-flat select {
     position: static;
     width: 100%;
-    height: 30px;
-    font-size: 1rem;
+    height: 80px;
+    font-size: 20px;
+    border-radius:5px;
 }
 
 #friendsApp.km-flat select {
     padding: .4em .2em;
+}
+
+#loginUsername, #loginPassword {
+    color: #777;
+    margin:1px;
+    margin-top: 12px;
+    height: 100px;
+    padding-left: 5%;
+    border-radius: 2px;
+    font-size: 20px;
 }
 
 /* Buttons */
@@ -145,9 +221,18 @@
     opacity: .35;
 }
 
-#friendsApp .btn-login,
 #friendsApp .signup-view .btn-signup {
-    background-color: #1bbc9b;
+    /*background-color: #1bbc9b;*/
+}
+
+#friendsApp .btn-login{
+    background-color:transparent;
+    height:90px;
+    width: 90%;
+    line-height: 80px;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size:23px;
+    text-align:center;
 }
 
 #friendsApp .signup-view .btn-signup,
@@ -164,7 +249,7 @@
     background-position: 50% 50%;
     background-repeat: no-repeat;
 }
-
+/*
 #friendsApp .btn-login-fb {
     background-image: url(images/icon-facebook.png);
 }
@@ -180,7 +265,7 @@
 #friendsApp .btn-login-adsf {
     background-image: url(images/icon-adsf.png);
 }
-
+*/
 #friendsApp .km-header .nav-button {
     display: inline-block;
     width: 2em;
@@ -240,6 +325,7 @@
     color: #fff;
     text-align: center;
     background-color: transparent;
+    clear:both;
 }
 
 #friendsApp .welcome-scrn .km-footer p {
@@ -256,7 +342,7 @@
 #friendsApp .app-logo {
     width: 247px;
     height: 32px;
-    background: transparent url(images/logo-telerik_devcloud.png) no-repeat 0 0;
+    background: transparent url(images/diagonal-grid.png) no-repeat 0 0;
 }
 
 #friendsApp .app-name {
@@ -297,48 +383,6 @@
     background-image: url(images/icon-password.png);
 }
 
-#friendsApp .welcome-scrn .group-wrp {
-    margin: -1em 1em 0;
-    padding: 0;
-    text-align: center;
-    list-style-type: none;
-}
-
-#friendsApp .welcome-scrn .group-wrp li {
-  margin: 1.5em 0 0;
-}
-
-#friendsApp .welcome-scrn .group-wrp .btn {
-    display: block;
-}
-
-#friendsApp .welcome-scrn .group-wrp .oauth {
-    margin-right: -1%;
-    margin-left: -1%;
-}
-
-#friendsApp .welcome-scrn .group-wrp .oauth .oauth-item {
-    float: left;
-    width: 23%;
-    margin: 0 1%;
-}
-
-#friendsApp .welcome-scrn .group-wrp .oauth .btn {
-    height: 45px;
-    text-indent: -999px;
-    overflow: hidden;
-}
-
-#friendsApp .welcome-scrn .group-wrp .oauth .btn span,
-#friendsApp .welcome-scrn .group-wrp .btn-signup span {
-    font-weight: 500;
-    font-size: 1rem;
-}
-
-#friendsApp .welcome-scrn .group-wrp .btn-signup {
-    border: 0 none;
-    background-color: transparent;
-}
 
 /* Signup */
 
