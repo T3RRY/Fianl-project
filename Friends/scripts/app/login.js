@@ -22,26 +22,6 @@ app.Login = (function () {
         var init = function () {
             $loginUsername = $('#loginUsername');
             $loginPassword = $('#loginPassword');
-            
-            if (!isFacebookLogin) {
-                $('#loginWithFacebook').addClass('disabled');
-                console.log('Facebook App ID and/or Redirect URI not set. You cannot use Facebook login.');
-            }
-            if (!isGoogleLogin) {
-                $('#loginWithGoogle').addClass('disabled');
-                console.log('Google Client ID and/or Redirect URI not set. You cannot use Google login.');
-            }
-            if (!isLiveIdLogin) {
-                $('#loginWithLiveID').addClass('disabled');
-                console.log('LiveID Client ID and/or Redirect URI not set. You cannot use LiveID login.');
-            }
-            if (!isAdfsLogin) {
-                $('#loginWithADSF').addClass('disabled');
-                console.log('ADFS Realm and/or Endpoint not set. You cannot use ADFS login.');
-            }
-            if (!isAnalytics) {
-                console.log('EQATEC product key is not set. You cannot use EQATEC Analytics service.');
-            }
         };
         
         var show = function () {
@@ -72,7 +52,7 @@ app.Login = (function () {
             })
             .then(function () {
 
-                app.mobileApp.navigate('views/activitiesView.html');
+                app.mobileApp.navigate('views/mainpage.html');
             })
             .then(null,
                   function (err) {
@@ -116,7 +96,7 @@ app.Login = (function () {
                 })
                 .then(function () {
                     app.mobileApp.hideLoading();
-                    app.mobileApp.navigate('views/activitiesView.html');
+                    app.mobileApp.navigate('views/mainpage.html');
                 })
                 .then(null, function (err) {
                     app.mobileApp.hideLoading();
@@ -163,7 +143,7 @@ app.Login = (function () {
                 })
                 .then(function () {
                     app.mobileApp.hideLoading();
-                    app.mobileApp.navigate('views/activitiesView.html');
+                    app.mobileApp.navigate('views/mainpage.html');
                 })
                 .then(null, function (err) {
                     app.mobileApp.hideLoading();
@@ -210,7 +190,7 @@ app.Login = (function () {
                 })
                 .then(function () {
                     app.mobileApp.hideLoading();
-                    app.mobileApp.navigate('views/activitiesView.html');
+                    app.mobileApp.navigate('views/mainpage.html');
                 })
                 .then(null, function (err) {
                     app.mobileApp.hideLoading();
@@ -253,7 +233,7 @@ app.Login = (function () {
                 })
                 .then(function () {
                     app.mobileApp.hideLoading();
-                    app.mobileApp.navigate('views/activitiesView.html');
+                    app.mobileApp.navigate('views/mainpage.html');
                 })
                 .then(null, function (err) {
                     app.mobileApp.hideLoading();
