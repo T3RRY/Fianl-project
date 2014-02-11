@@ -16,10 +16,13 @@
 
 <!-- Activities ListView Template -->
 <script type="text/x-kendo-template" id="activityTemplate">
+    
     <div data-role="touch" data-bind="events: { tap: activitySelected }" class="cf">
         <div class="user-avatar">
             <img data-bind="attr:{src: User().PictureUrl}" alt="styles/images/avatar.png" />
         </div>
+        
+    
         <div class="activity-content">
             <h2 class="person-name">${User().DisplayName}</h2>
             <time class="time-span">${CreatedAtFormatted()}</time>

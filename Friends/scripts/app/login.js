@@ -53,6 +53,7 @@ app.Login = (function () {
             .then(function () {
 
                 app.mobileApp.navigate('views/mainpage.html');
+                
             })
             .then(null,
                   function (err) {

@@ -31,16 +31,21 @@ var app = (function (win) {
         return;
     }
     
-    // Handle device back button tap
-    var onBackKeyDown = function(e) {
+     /* //Handle device back button tap
+    var onBackKeyDown = function() {
 
-        e.preventDefault();
-
-        navigator.notification.confirm('Do you really want to exit?', function (confirmed) {
-
-            var exit = function () {
-                navigator.app.exitApp();
+        app.mobileApp.navigate('views/mainpage.html');
+        
+       e.preventDefault();
+        
+        var exit = function () {
+               // navigator.app.exitApp();
+                
             };
+
+        navigator.notification.confirm('Return to the Home page?', function (confirmed) {
+
+            
 
             if (confirmed === true || confirmed === 1) {
                 // Stop EQATEC analytics monitor on app exit
@@ -51,7 +56,14 @@ var app = (function (win) {
             }
 
         }, 'Exit', 'Ok,Cancel');
-    };
+    };*/
+    
+    
+    
+    
+    
+    
+    
 
     var onDeviceReady = function() {
 
@@ -146,3 +158,36 @@ var app = (function (win) {
 
 }(window));
 
+
+function logout() {
+        navigator.notification.confirm('Do you want to Sign Out and Close the app?', function (confirmed) {
+           if (confirmed === true || confirmed === 1) {
+                // Stop EQATEC analytics monitor on app exit
+                if (analytics.isAnalytics()) {
+                    analytics.Stop();
+                }
+                AppHelper.logout().then(exit, exit);
+               
+            }
+            navigator.app.exitApp();
+
+        }, 'Exit', 'Ok,Cancel');
+    };
+//-------------------------------------------------------------------------------------------------    
+function onBackKeyDown() {
+    var x = location.hash;
+         if(x == ''){
+             alert("Please Sign In");
+         } 
+    else{
+         app.mobileApp.navigate('views/mainpage.html'); 
+        }  
+};
+                    
+  
+
+function myFunction()
+    {
+    alert("Hello World!");
+    };
+    
