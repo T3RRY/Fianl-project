@@ -833,8 +833,8 @@ nav li.home a:before {
     padding:3%;
     background:#fff;
     color:#000;
-    border-radius: 0px 0px 5px 5px;
-    overflow:hidden;
+    border-radius: 0px 0px 6px 6px;
+    overflow:auto;
 }
 
 /* The Title input(Mr..)*/
@@ -850,7 +850,7 @@ nav li.home a:before {
 }
 
 .styled-input, .styled-select{
-  margin-top:6%;
+  margin-top:3.5%;
   font:'Arial', sans-serif ;
 }
 
