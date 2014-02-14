@@ -176,7 +176,7 @@ function logout() {
 //-------------------------------------------------------------------------------------------------    
 function onBackKeyDown() {
     var x = location.hash;
-         if(x == ''){
+         if(x === ''){
              alert("Please Sign In");
          } 
     else{
@@ -184,10 +184,4 @@ function onBackKeyDown() {
         }  
 };
                     
-  
-
-function myFunction()
-    {
-    alert("Hello World!");
-    };
-    
+//--------------------------------------------------------------------------------  
