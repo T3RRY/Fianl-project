@@ -345,7 +345,7 @@ header {
 #friendsApp .app-logo {
     width: 247px;
     height: 32px;
-    background: transparent url(images/diagonal-grid.png) no-repeat 0 0;
+    background: transparent url(image/diagonal-grid.png) no-repeat 0 0;
 }
 
 #friendsApp .app-name {
@@ -865,3 +865,5 @@ nav li.home a:before {
    height: 34px;
    -webkit-appearance: none;
 }
+
+
