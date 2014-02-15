@@ -1,4 +1,4 @@
-function ajaxFunction(){
+/*function ajaxFunction(){
 	var ajaxRequest;  // The variable that makes Ajax possible!
 	
 	try{
@@ -26,4 +26,4 @@ function ajaxFunction(){
 	}
 	ajaxRequest.open("GET", "http://sots.brookes.ac.uk/~09081449/HCS/serverTime.php", true);
 	ajaxRequest.send(null); 
-}
+} */
